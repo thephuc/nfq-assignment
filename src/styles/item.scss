@@ -1,0 +1,52 @@
+.media-item {
+  width: 30%;
+  height: 530px;
+  box-sizing: border-box;
+
+  .preview-image {
+    height: 200px;
+    width: 100%;
+    background-size: cover;
+    margin-bottom: 5px;
+  }
+  .buttons {
+    margin: 10px 0;
+    button {
+      &.like {
+        background-color: #fb3958;
+        color: white;
+      }
+      &.liked {
+        color: red;
+        background-color: transparent;
+      }
+      &.edit {
+        background-color: #6dc993;
+        color: white;
+      }
+
+      &.add {
+        background-color: #458eff;
+        color: white;
+      }
+      &.added {
+        cursor: not-allowed;
+        color: rgb(74, 144, 226);
+        background-color: transparent;
+      }
+    }
+  }
+
+  .title {
+    margin-bottom: 5px;
+  }
+  .timestamp {
+    margin-bottom: 15px;
+  }
+  .description {
+    height: 170px;
+    overflow: scroll;
+    font-size: 17px;
+  }
+
+}
